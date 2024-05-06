@@ -3,34 +3,52 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Table</title>
+    <link rel="stylesheet" href="/css/general.css" />
     <link rel="stylesheet" href="/css/table.css" />
+    <title>Table</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <header></header>
     <div class="container">
-      <div class="table">
-      
-      </div>
-
-     
-      <div class="token_section">
-        <button> <img src="/images/Chips/chipBlackWhite.png" alt=""></button>
-        <button> <img src="/images/Chips/chipBlackWhite.png" alt=""></button>
-        <button> <img src="/images/Chips/chipBlackWhite.png" alt=""></button>
-        <button> <img src="/images/Chips/chipBlackWhite.png" alt=""></button>
-        <button> <img src="/images/Chips/chipBlackWhite.png" alt=""></button>
-        <button> <img src="/images/Chips/chipBlackWhite.png" alt=""></button>
-        <div class="button_section">
-          <button>Hit </button>
-          <button>deal </button>
+      <header>
+        <div class="player_info"><p>Money</p></div>
+        <div class="logo">BlackJack</div>
+        <nav>
+          <a href="http://"><img src="/images/icons/person.svg" /></a>
+          <a href="http://"><img src="/images/icons/help.svg" /></a>
+          <a href="http://"><img src="/images/icons/volume.svg" /></a>
+          <a href="http://"><img src="/images/icons/logout.svg" /></a>
+        </nav>
+      </header>
+      <div class="table"></div>
+      <div class="player_ui">
+        <div class="left_button">
+          <button>
+            <img src="/images/Chips/chipBlueWhite.png" alt="chips coins" />
+          </button>
+          <button>
+            <img src="/images/Chips/chipBlueWhite.png" alt="chips coins" />
+          </button>
+          <button>
+            <img src="/images/Chips/chipBlueWhite.png" alt="chips coins" />
+          </button>
+          <button>
+            <img src="/images/Chips/chipBlueWhite.png" alt="chips coins" />
+          </button>
         </div>
-  
-      
-      </div>
-     
-    
-      
+        <div class="bid_input">
+          <p class="player_bid">Mise : 5100 €</p>
+        </div>
+        <div class="right_button">
+          <button>Deal</button>
+          <button>Hit</button>
+          <button>Stand</button>
+        </div>
       </div>
     </div>
   </body>

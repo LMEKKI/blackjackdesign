@@ -1,73 +1,129 @@
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
 body {
-  overflow: hidden;
-  width: 1000px;
-  height: 1000px;
+  color: white;
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-style: inherit;
 }
-
 .container {
-  width: 100dvw;
-  height: 90dvh;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   align-items: center;
-  justify-content: space-evenly;
-  background-color: #101820ff;
+  width: 960px;
+  height: 600px;
+  background-color: #0a1122;
 }
-
+/* tableee*/
 .table {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 600px;
+  height: 300px;
+  background-color: #172646;
   background-image: url(/images/tables/greenfond.jpg);
-  width: 50dvw;
-  height: 50dvh;
-  background-size: cover;
-  background-position: 50%;
-  box-shadow: rgb(151, 94, 23) 0px 0px 0px 3px, rgb(151, 94, 23) 0px 0px 0px 6px,
-    rgb(151, 94, 23) 0px 0px 0px 9px, rgb(151, 94, 23) 0px 0px 0px 12px,
-    rgb(151, 94, 23) 0px 0px 0px 15px;
-  border-radius: 20px;
+  box-shadow: #5f3a0b 0px 0px 0px 3px, #5f3a0b 0px 0px 0px 6px,
+    #5f3a0b 0px 0px 0px 9px, #5f3a0b 0px 0px 0px 12px, #5f3a0b 0px 0px 0px 25px;
+  border-radius: 39%;
 }
 
-button_section {
-  background-color: #2f4858;
+/* header */
 
-  box-shadow: rgb(245, 251, 240) 0px 0px 0px 3px,
-    rgb(245, 251, 240) 0px 0px 0px 6px, rgb(245, 251, 240) 0px 0px 0px 9px,
-    rgb(245, 251, 240) 0px 0px 0px 12px, rgb(245, 251, 240) 0px 0px 0px 15px;
-  border-radius: 20px;
-  width: 30dvw;
-  height: 50dvh;
-}
-.token_section {
+header {
+  width: 100%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
-  width: 50dvw;
-  height: 20dvh;
-  background-color: #2f4858;
-  box-shadow: rgb(245, 251, 240) 0px 0px 0px 3px,
-    rgb(245, 251, 240) 0px 0px 0px 6px, rgb(245, 251, 240) 0px 0px 0px 9px,
-    rgb(245, 251, 240) 0px 0px 0px 12px, rgb(245, 251, 240) 0px 0px 0px 15px;
-  border-radius: 20px;
 }
 
-button img {
-  background-position: 50%;
-  background-size: contain;
+nav {
+  width: 20%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.token_section button {
-  width: 65px;
-  height: 65px;
+.logo {
+  font-size: 30px;
+  font-weight: 800;
+  font-style: inherit;
+}
+
+nav a {
+  height: 25px;
+  width: 25px;
+  background-color: rgb(255, 255, 255);
   border-radius: 50%;
+}
+
+.player_ui {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.left_button button {
+  border-radius: 100%;
+  width: 64px;
+  height: 64px;
+  box-shadow: rgba(255, 255, 255, 0.911) 0px 5px;
+  border-color: #ffffff;
+}
+.left_button button img {
+  background-size: cover;
+  width: 100%;
+}
+
+.right_button :nth-last-child(1) {
+  background-color: #8bc959;
+}
+.right_button :nth-last-child(2) {
+  background-color: #8bc959;
+}
+.right_button :nth-child(1) {
+  background-color: #ff8e8e;
+}
+
+.right_button button {
+  border-color: #ffffff;
+  font-size: 18px;
+  color: white;
+  padding: 8px 18px;
+  box-shadow: rgba(255, 255, 255, 0.911) 0px 5px;
+  border-radius: 50px;
+}
+
+.player_bid {
+  background-color: #4b6587;
+  border-radius: 50px;
+}
+
+.bid_input {
+  text-align: justify;
+  height: 50%px;
+  width: 20%;
+}
+
+button {
+  opacity: 1;
+  transition: opacity 1s ease 0s;
+}
+button:hover {
+  box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+  opacity: 0.68;
+}
+a,
+.logo {
+  opacity: 1;
+  transition: opacity 1s ease 0s;
+}
+a:hover {
+  background-color: #ff8e8e;
+  opacity: 0.68;
+}
+
+.logo:hover {
+  color: #ff8e8e;
+  opacity: 0.68;
 }
